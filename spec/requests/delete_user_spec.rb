@@ -15,7 +15,7 @@ RSpec.describe 'Delete User', type: :request do
     delete "/users/#{user.id}"
 
     expect(response).to have_http_status(:success)
-    expect(response.status).to eq(202)
+    expect(response.status).to eq(204)
 
     get "/users/#{user.id}"
 

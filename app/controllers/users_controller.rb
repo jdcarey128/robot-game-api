@@ -28,7 +28,6 @@ class UsersController < ApplicationController
   # DELETE /users/1
   def destroy
     @user.destroy
-    render json: {}, status: 202
   end
 
   private
