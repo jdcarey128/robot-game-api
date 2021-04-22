@@ -21,6 +21,7 @@ RSpec.describe 'Create User', type: :request do
     expect(result[:_id]).to be_a(Object)
     expect(result[:name]).to be_a(String)
     expect(result[:score]).to be_a(Integer)
+    expect(result[:created_at]).to be_a(String)
   end
   
 end
