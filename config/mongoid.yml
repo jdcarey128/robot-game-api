@@ -162,8 +162,8 @@ test:
   options: 
     raise_not_found_error: false
 production:
-  sessions:
+  clients:
     default:
+      database: mongoid
       hosts:
         - <%= "#{ENV['MONGODB_URI']}" %>
-      database: mongoid
