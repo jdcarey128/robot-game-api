@@ -1,28 +1,29 @@
 # Robot Game API
 
-### About 
-This is a very simple API for a simple [Robot Game](https://github.com/jdcarey128/robot-game). The live game can be played [here](). 
+## About 
+This is a very simple API for a simple [Robot Game](https://github.com/jdcarey128/robot-game). The deployed game is hosted on Netlify and can be played [here](https://robot-grid-game.netlify.app/). 
 
-### Requirements 
+## Requirements 
 Rails 5  
-MongoDB 
+MongoDB ([Installation](https://docs.mongodb.com/manual/installation/))
 
-### Installation
+## Installation
 ```zsh
 bundle install
 ```
 
-### Run local server 
+## Run local server  
+http://localhost:300/
 ```
 rails s
 ```
 
-### Testing 
+## Testing 
 ```
 bundle exec rspec
 ```
 
-### Endpoints 
+## Endpoints 
 `GET /users`  
 Returns top 10 users and their scores for the game. 
 ```zsh
@@ -38,7 +39,7 @@ Returns top 10 users and their scores for the game.
 ]
 ```
 
-`POST /users`
+`POST /users`  
 Creates a user document and returns document. Requires name and score input.
 ```zsh 
 # Request body 
@@ -70,3 +71,6 @@ Returns the document given its associated $oid. Returns `null` for a document th
 
 `DELETE /users/<$oid>`  
 Deletes the document associated with the $oid with a 204 response status. 
+
+### Author
+**Joshua Carey** - *Turing Graduate* - [GitHub Profile](https://github.com/jdcarey128) - [Turing Alum Portfolio](https://terminal.turing.edu/alumni/595-joshua-carey) - [LinkedIn](https://www.linkedin.com/in/carey-joshua/)
