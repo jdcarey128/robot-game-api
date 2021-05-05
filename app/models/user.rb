@@ -3,6 +3,7 @@ class User
   include Mongoid::Timestamps::Created
   field :name, type: String
   field :score, type: Integer
+  field :size, type: String
 
   class << self 
     def leaderboard
